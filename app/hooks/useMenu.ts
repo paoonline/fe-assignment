@@ -11,7 +11,7 @@ const useMenu = () => {
   const onClickMenuLists = (name: string, index: number) => {
     const nameAtIndex = Array.from(menuSets)[index];
     const item = menu.find((res) => res.name === nameAtIndex);
-    const type = item?.type;
+    const type = item?.type || '';
 
     const newMenuLists = {
       type,
